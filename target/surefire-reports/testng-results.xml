@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-30T12:44:10 IST" name="Suite" finished-at="2024-11-30T12:45:41 IST" duration-ms="91182">
+    <groups>
+    </groups>
+    <test started-at="2024-11-30T12:44:10 IST" name="Submitting an order" finished-at="2024-11-30T12:45:41 IST" duration-ms="91182">
+      <class name="endtoendOrder.PurchasingAnItem">
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:44:10 IST" name="loginApp" finished-at="2024-11-30T12:44:25 IST" duration-ms="14388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="puchaseItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:44:25 IST" name="puchaseItem" data-provider="getData" finished-at="2024-11-30T12:44:42 IST" duration-ms="17525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swamy@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Virat@183]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Iphone 13 pro]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- puchaseItem -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:44:42 IST" name="closeBrowser" finished-at="2024-11-30T12:44:47 IST" duration-ms="4842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:44:47 IST" name="loginApp" finished-at="2024-11-30T12:45:01 IST" duration-ms="14231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="puchaseItem(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:45:01 IST" name="puchaseItem" data-provider="getData" finished-at="2024-11-30T12:45:18 IST" duration-ms="16558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swamy@test.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Virat@183]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ADIDAS ORIGINAL]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ZARA COAT 3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- puchaseItem -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:45:18 IST" name="closeBrowser" finished-at="2024-11-30T12:45:21 IST" duration-ms="3542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="loginApp()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:45:21 IST" name="loginApp" finished-at="2024-11-30T12:45:35 IST" duration-ms="13944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method signature="verifyOrederedItems()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:45:35 IST" name="verifyOrederedItems" finished-at="2024-11-30T12:45:38 IST" depends-on-methods="endtoendOrder.PurchasingAnItem.puchaseItem" duration-ms="3226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrederedItems -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:endtoendOrder.PurchasingAnItem@26abb146]" started-at="2024-11-30T12:45:38 IST" name="closeBrowser" finished-at="2024-11-30T12:45:41 IST" duration-ms="2810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- endtoendOrder.PurchasingAnItem -->
+    </test> <!-- Submitting an order -->
+  </suite> <!-- Suite -->
+</testng-results>

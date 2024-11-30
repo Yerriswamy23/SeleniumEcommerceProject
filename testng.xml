@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="listener.Listeners"/>
+	</listeners>
+	<!-- <groups>
+		<run>
+			<include name = "ErrorItem"/>
+		</run>
+	</groups> -->
+  <test  name="Submitting an order">
+    <classes>
+      <class name="endtoendOrder.PurchasingAnItem"/>
+     
+    </classes>
+    
+
+  </test> 
+   <!--  
+   <test  name="Error Validation">
+    <classes>
+     
+      <class name="endtoendOrder.ErrorValidation"/>
+    </classes> 
+     
+  </test> >
+  -->
+</suite> <!-- Suite -->

@@ -8,24 +8,48 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Submitting an order</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">70,149</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Error Validation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">26,088</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">96,237</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,188</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Submitting an order &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">endtoendOrder.PurchasingAnItem</td><td><a href="#m0">puchaseItem</a></td><td rowspan="2">1731232814948</td><td rowspan="2">15957</td></tr><tr class="passedeven"><td><a href="#m1">puchaseItem</a></td></tr><tr class="passedeven"><td><a href="#m2">verifyOrederedItems</a></td><td rowspan="1">1731232869011</td><td rowspan="1">2937</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Error Validation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">endtoendOrder.ErrorValidation</td><td><a href="#m3">errorProductValidation</a></td><td rowspan="1">1731232884961</td><td rowspan="1">2960</td></tr><tr class="failedeven"><td><a href="#m4">verifyErrormessage</a></td><td rowspan="1">1731232899253</td><td rowspan="1">598</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">endtoendOrder.ErrorValidation</td><td><a href="#m0">verifyErrormessage</a></td><td rowspan="1">1732961984249</td><td rowspan="1">675</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">endtoendOrder.ErrorValidation</td><td><a href="#m1">errorProductValidation</a></td><td rowspan="1">1732961968324</td><td rowspan="1">3145</td></tr></tbody>
 </table>
-<h2>Submitting an order</h2><h3 id="m0">endtoendOrder.PurchasingAnItem#puchaseItem</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>swamy@test.com</td><td>Virat@183</td><td>ADIDAS ORIGINAL</td><td>Iphone 13 pro</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">endtoendOrder.PurchasingAnItem#puchaseItem</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>swamy@test.com</td><td>Virat@183</td><td>ADIDAS ORIGINAL</td><td>ZARA COAT 3</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">endtoendOrder.PurchasingAnItem#verifyOrederedItems</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Error Validation</h2><h3 id="m3">endtoendOrder.ErrorValidation#errorProductValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at endtoendOrder.ErrorValidation.errorProductValidation(ErrorValidation.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">endtoendOrder.ErrorValidation#verifyErrormessage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
+<h2>Default test</h2><h3 id="m0">endtoendOrder.ErrorValidation#verifyErrormessage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
 	at endtoendOrder.ErrorValidation.verifyErrormessage(ErrorValidation.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">endtoendOrder.ErrorValidation#errorProductValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

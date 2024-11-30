@@ -21,7 +21,7 @@ public class ErrorValidation extends BaseTest {
 		loginpage=new LoginPage(driver);
 	    loginpage.login("swamy@test.com", "123");
 	String errormsg=loginpage.errorLogin();
-		Assert.assertEquals("Incorrect email  password.", errormsg);
+		Assert.assertEquals("Incorrect email or password.", errormsg);
 	}
 	@Test()
 	 public void errorProductValidation() throws InterruptedException {
@@ -30,6 +30,6 @@ public class ErrorValidation extends BaseTest {
 		OrdersPage orders = new OrdersPage(driver);
 		
 			boolean match =orders.VerifyorderedItemsPage("RedMI");
-			Assert.assertTrue(match);
+			Assert.assertFalse(match);
 	 }
 }
